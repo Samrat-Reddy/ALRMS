@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Members Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Members Management</h1>
+    <button class="back-btn" onclick="navigate('index.html')">
+        ← Back to Dashboard
+    </button>
+</header>
+
+<div class="container-column">
+
+    <h2>Add New Member</h2>
+
+    <form id="memberForm">
+        <input type="text" id="memberId" placeholder="Member ID" required>
+        <input type="text" id="memberName" placeholder="Member Name" required>
+
+        <button type="submit">Add Member</button>
+    </form>
+
+    <h2>Member List</h2>
+
+    <table id="memberTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</div>
+
+<footer>
+    <p><strong>ALRMS</strong> | Automated Library Resource Management System</p>
+    <p>Developed by Samrat Reddy &copy; 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
