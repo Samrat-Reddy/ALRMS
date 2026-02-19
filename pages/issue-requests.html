@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ALRMS | Issue Books</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <h2><i class="fa-solid fa-book-open"></i> ALRMS</h2>
+
+    <a href="admin.html" class="nav-link">
+      <i class="fa-solid fa-chart-line"></i> Dashboard
+    </a>
+
+    <a href="manage-books.html" class="nav-link">
+      <i class="fa-solid fa-book-medical"></i> Manage Books
+    </a>
+
+    <a href="issue-requests.html" class="nav-link active">
+      <i class="fa-solid fa-file-circle-check"></i> Issue Requests
+    </a>
+
+    <a href="issued-books.html" class="nav-link">
+      <i class="fa-solid fa-book-open-reader"></i> Issued Books
+    </a>
+  </div>
+
+  <div class="nav-right">
+        <span class="user-role" id="userRole">
+            <i class="fa-solid fa-user-gear"></i> Admin
+        </span>
+    <button class="logout-btn" id="logoutBtn">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </button>
+  </div>
+</nav>
+
+<main class="dashboard-container">
+  <h1>Manage Books</h1>
+  <p>This section allows the librarian to add, update, or remove books.</p>
+
+  <div class="card">
+    <p>No data available. This feature will be activated during backend integration.</p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>
+    © 2026 Automated Library Resource Management System (ALRMS)<br>
+    Developed as Academic Project
+  </p>
+</footer>
+
+<script src="../assets/js/admin.js"></script>
+</body>
+</html>

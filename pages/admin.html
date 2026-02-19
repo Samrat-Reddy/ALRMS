@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALRMS | Admin Dashboard</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h2><i class="fa-solid fa-book-open"></i> ALRMS</h2>
+
+        <a href="admin.html" class="nav-link active">
+            <i class="fa-solid fa-chart-line"></i> Dashboard
+        </a>
+
+        <a href="manage-books.html" class="nav-link">
+            <i class="fa-solid fa-book-medical"></i> Manage Books
+        </a>
+
+        <a href="issue-requests.html" class="nav-link">
+            <i class="fa-solid fa-file-circle-check"></i> Issue Requests
+        </a>
+
+        <a href="issued-books.html" class="nav-link">
+            <i class="fa-solid fa-book-open-reader"></i> Issued Books
+        </a>
+    </div>
+
+    <div class="nav-right">
+        <span class="user-role" id="userRole">
+            <i class="fa-solid fa-user-gear"></i> Admin
+        </span>
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="dashboard-container">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="dashboard-cards">
+        <div class="card">
+            <h3>Manage Books</h3>
+            <p>Add, update, or remove books from the library.</p>
+            <button disabled>Manage</button>
+        </div>
+
+        <div class="card">
+            <h3>Issue Requests</h3>
+            <p>View and approve/reject book issue requests.</p>
+            <button disabled>View</button>
+        </div>
+
+        <div class="card">
+            <h3>Issued Books</h3>
+            <p>View all currently issued books.</p>
+            <button disabled>View</button>
+        </div>
+
+        <div class="card">
+            <h3>Students</h3>
+            <p>View registered students.</p>
+            <button disabled>View</button>
+        </div>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        © 2026 Automated Library Resource Management System (ALRMS)<br>
+        Developed as Academic Project
+    </p>
+</footer>
+
+<!-- Admin Logic -->
+<script src="../assets/js/admin.js"></script>
+
+</body>
+</html>
