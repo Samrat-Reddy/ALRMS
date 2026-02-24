@@ -74,6 +74,17 @@
             <p>Check overdue fines (if any).</p>
             <button disabled>Check</button>
         </div>
+
+        <div class="card">
+            <h3>
+                <i class="fa-solid fa-chart-pie"></i>
+                My Book Status
+            </h3>
+            <p>Overview of books issued and available to you</p>
+            <div class="chart-box">
+                <canvas id="studentChart"></canvas>
+            </div>
+        </div>
     </div>
 
 </main>
@@ -87,6 +98,10 @@
 </footer>
 
 <script src="../assets/js/student.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../assets/js/charts.js"></script>
+<script>
+    renderStudentBookStatusChart("studentChart");
+</script>
 </body>
 </html>

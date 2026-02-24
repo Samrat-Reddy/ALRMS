@@ -3,7 +3,7 @@ const user = JSON.parse(localStorage.getItem("alrmsUser"));
 
 if (!user || user.role !== "student") {
     // Not logged in or wrong role
-    window.location.href = "../public/index.html";
+    window.location.href = "../../pages/login.html";
 }
 
 // DISPLAY ROLE IN NAVBAR
@@ -19,6 +19,6 @@ const logoutBtn = document.getElementById("logoutBtn");
 if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
         localStorage.removeItem("alrmsUser");
-        window.location.href = "../public/index.html";
+        window.location.href = "../../pages/login.html";
     });
 }

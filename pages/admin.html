@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -72,6 +73,17 @@
             <p>View registered students.</p>
             <button disabled>View</button>
         </div>
+
+        <div class="card">
+            <h3>
+                <i class="fa-solid fa-chart-line"></i>
+                Monthly Issue Trend
+            </h3>
+            <p>Books issued over the last few months</p>
+            <div class="chart-box">
+                <canvas id="adminChart"></canvas>
+            </div>
+        </div>
     </div>
 
 </main>
@@ -86,6 +98,10 @@
 
 <!-- Admin Logic -->
 <script src="../assets/js/admin.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../assets/js/charts.js"></script>
+<script>
+    renderAdminMonthlyIssuesChart("adminChart");
+</script>
 </body>
 </html>
