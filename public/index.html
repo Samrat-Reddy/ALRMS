@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ALRMS | Library Dashboard</title>
+
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- PUBLIC NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <h2><i class="fa-solid fa-book-open"></i> ALRMS</h2>
+  </div>
+  <div class="nav-right">
+    <a href="../pages/login.html" class="nav-link">
+      <i class="fa-solid fa-right-to-bracket"></i> Login
+    </a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Automated Library Resource Management System</h1>
+    <p>
+      A centralized, role-based platform for managing library
+      resources efficiently and transparently.
+    </p>
+
+    <div class="hero-actions">
+      <a href="../pages/login.html" class="hero-btn">
+        <i class="fa-solid fa-right-to-bracket"></i> Login
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="dashboard-container">
+  <h1>Library Overview</h1>
+  <p class="page-subtitle">
+    Distribution of books across major departments
+  </p>
+
+  <div class="card">
+    <canvas id="publicChart" style="height:260px"></canvas>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<main class="dashboard-container">
+  <h1>Welcome to ALRMS</h1>
+  <p class="page-subtitle">
+    Automated Library Resource Management System
+  </p>
+
+  <div class="dashboard-cards">
+
+    <div class="card">
+      <h3><i class="fa-solid fa-book"></i> Digital Catalogue</h3>
+      <p>Browse and explore the library’s collection of books.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fa-solid fa-user-graduate"></i> Student Access</h3>
+      <p>Students can issue, return books and track fines.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fa-solid fa-user-gear"></i> Admin Management</h3>
+      <p>Librarians manage inventory and issue approvals.</p>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 30px;">
+    <a href="../pages/login.html" class="logout-btn" style="text-decoration:none;">
+      <i class="fa-solid fa-right-to-bracket"></i> Proceed to Login
+    </a>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>
+    © 2026 Automated Library Resource Management System (ALRMS)<br>
+    Developed as Academic Project
+  </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="../assets/js/charts.js"></script>
+<script>
+  renderPublicOverviewChart("publicChart");
+</script>
+</body>
+</html>
