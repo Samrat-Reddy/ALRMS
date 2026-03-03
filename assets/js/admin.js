@@ -16,6 +16,6 @@ const logoutBtn = document.getElementById("logoutBtn");
 if (logoutBtn) {
     logoutBtn.addEventListener("click", function () {
         localStorage.removeItem("alrmsUser");
-        window.location.href = "../../pages/login.html";
+        window.location.href = "login.html";
     });
 }
