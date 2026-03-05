@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALRMS | Fines</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-left">
+        <h2>
+            <i class="fa-solid fa-book-open"></i> ALRMS
+        </h2>
+
+        <a href="student.html" class="nav-link">
+            <i class="fa-solid fa-gauge"></i> Dashboard
+        </a>
+
+        <a href="catalogue.html" class="nav-link">
+            <i class="fa-solid fa-book"></i> Catalogue
+        </a>
+
+        <a href="student-issued-books.html" class="nav-link">
+            <i class="fa-solid fa-book-reader"></i> My Issued Books
+        </a>
+
+        <a href="fines.html" class="nav-link acive">
+            <i class="fa-solid fa-indian-rupee-sign"></i> Fines
+        </a>
+    </div>
+
+    <div class="nav-right">
+        <span class="user-role" id="userRole">
+            <i class="fa-solid fa-user"></i> Student
+        </span>
+
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </div>
+</nav>
+
+<main class="dashboard-container">
+    <h1>Fines</h1>
+
+    <div class="card">
+        <p>No fines pending.</p>
+        <p>Overdue fines will be calculated and displayed here.</p>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>
+        © 2026 Automated Library Resource Management System (ALRMS)<br>
+        Developed as Academic Project
+    </p>
+</footer>
+
+<script src="../assets/js/student.js"></script>
+</body>
+</html>

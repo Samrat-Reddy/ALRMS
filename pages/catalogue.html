@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALRMS | Book Catalogue</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-left">
+        <h2>
+            <i class="fa-solid fa-book-open"></i> ALRMS
+        </h2>
+
+        <a href="student.html" class="nav-link">
+            <i class="fa-solid fa-gauge"></i> Dashboard
+        </a>
+
+        <a href="catalogue.html" class="nav-link active">
+            <i class="fa-solid fa-book"></i> Catalogue
+        </a>
+
+        <a href="student-issued-books.html" class="nav-link">
+            <i class="fa-solid fa-book-reader"></i> My Issued Books
+        </a>
+
+        <a href="fines.html" class="nav-link">
+            <i class="fa-solid fa-indian-rupee-sign"></i> Fines
+        </a>
+    </div>
+
+    <div class="nav-right">
+        <span class="user-role" id="userRole">
+            <i class="fa-solid fa-user"></i> Student
+        </span>
+
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i> Logout
+        </button>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="dashboard-container">
+
+    <h1>Book Catalogue</h1>
+
+    <!-- SEARCH & FILTER SECTION -->
+    <div class="catalogue-controls">
+        <input type="text" placeholder="Search by title or author" disabled>
+        <select disabled>
+            <option>All Categories</option>
+            <option>Computer Science</option>
+            <option>Mathematics</option>
+            <option>Electronics</option>
+        </select>
+    </div>
+
+    <!-- BOOK LIST -->
+    <div class="catalogue-table">
+        <table>
+            <thead>
+            <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Introduction to Algorithms</td>
+                <td>Cormen et al.</td>
+                <td>Computer Science</td>
+                <td class="status available">Available</td>
+                <td><button class="action-btn" disabled>Issue</button></td>
+            </tr>
+            <tr>
+                <td>Clean Code</td>
+                <td>Robert C. Martin</td>
+                <td>Software Engineering</td>
+                <td class="status issued">Issued</td>
+                <td><button class="action-btn" disabled>Unavailable</button></td>
+            </tr>
+            <tr>
+                <td>Engineering Mathematics</td>
+                <td>B.S. Grewal</td>
+                <td>Mathematics</td>
+                <td class="status available">Available</td>
+                <td><button class="action-btn" disabled>Issue</button></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>
+        © 2026 Automated Library Resource Management System (ALRMS)<br>
+        Developed as Academic Project
+    </p>
+</footer>
+
+</body>
+</html>

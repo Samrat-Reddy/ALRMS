@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALRMS | Login</title>
+    <!-- STYLE SHEET -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="login-container">
+    <h1>ALRMS</h1>
+    <p>Automated Library Resource Management System</p>
+
+    <form id="loginForm">
+        <label for="email">Email / User ID</label>
+        <input type="text" id="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required><br><br>
+
+        <label for="role">Login As</label>
+        <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="admin">Librarian / Admin</option>
+        </select><br><br>
+
+        <p id="errorMessage" class="error-message"></p>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <p>
+        © 2026 Automated Library Resource Management System (ALRMS) <br>
+        Developed as Academic Project
+    </p>
+</footer>
+
+<script src="../assets/js/auth.js"></script>
+
+</body>
+</html>
