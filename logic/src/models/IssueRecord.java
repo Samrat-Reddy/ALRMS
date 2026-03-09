@@ -62,7 +62,7 @@ public class IssueRecord {
     @Override
     public String toString() {
         return String.format(
-            "[RecordID: %d | models.Book: \"%s\" | models.Student: %s | IssuedBy: %s | IssueDate: %s | DueDate: %s | Returned: %s | Fine: Rs.%.2f]",
+            "[RecordID: %d | book: \"%s\" | student: %s | IssuedBy: %s | IssueDate: %s | DueDate: %s | Returned: %s | Fine: Rs.%.2f]",
             recordId,
             book.getTitle(),
             student.getName(),
