@@ -1,4 +1,4 @@
-# 📚 Automated Library Resource Management System (ALRMS)
+# Automated Library Resource Management System (ALRMS)
 
 A structured academic project demonstrating the design of a **Library Resource Management System** with a **frontend dashboard** and a **Java-based logic layer using Data Structures and Algorithms (DSA)**.
 
@@ -6,7 +6,7 @@ This project is developed as part of **BTech Trimester 2 coursework** to demonst
 
 ---
 
-# 🧩 Project Architecture
+## Project Architecture
 
 The project is divided into two independent layers.
 
@@ -19,6 +19,11 @@ ALRMS
 │
 └── README.md
 ```
+
+> **The two layers are independent.** The Java logic layer is a standalone
+> console program; the dashboard is a standalone UI running on local mock data
+> (`assets/js/data.js`). They are not wired together — integrating them was
+> outside the scope of this coursework.
 
 ### Frontend
 
@@ -60,9 +65,18 @@ Implemented concepts:
 
 The system is implemented as a **console-based menu-driven program**.
 
+#### Hash Table
+
+Book lookup uses a hash table with separate chaining:
+
+* Division-method hash (`bookId % capacity`)
+* Initial capacity of 11 — a prime, to reduce clustering
+* Collisions resolved by chaining; new nodes are prepended to the bucket
+* Load factor threshold of 0.75
+
 ---
 
-# 📂 Logic Folder Structure
+## Logic Folder Structure
 
 ```
 logic/src
@@ -89,7 +103,7 @@ logic/src
 
 ---
 
-# ⚙️ How to Run the Logic Layer
+## How to Run the Logic Layer
 
 1. Navigate to the `logic/src` directory.
 2. Compile the program.
@@ -108,7 +122,7 @@ The system will launch a **menu-driven console interface**.
 
 ---
 
-# 🖥 Example Console Menu
+## Example Console Menu
 
 ```
 ===== ALRMS LIBRARY SYSTEM =====
@@ -127,7 +141,7 @@ The system will launch a **menu-driven console interface**.
 
 ---
 
-# 📊 Learning Objectives
+## Learning Objectives
 
 This project demonstrates:
 
@@ -138,7 +152,7 @@ This project demonstrates:
 
 ---
 
-# 🚀 Future Work
+## Future Work
 
 Planned extensions:
 
@@ -149,10 +163,9 @@ Planned extensions:
 
 ---
 
-# 👨‍💻 Author
+## Author
 
 Samrat Reddy
 BTech – Computer Science
 
 ---
-
